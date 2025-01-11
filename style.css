@@ -1,0 +1,278 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Josefin Sans", serif;
+
+}
+:root{
+    --primary-color: #e01473;
+    --secondary-color: #1a2a6e;
+    --font-color: white;
+    --inputbg-color: #262626;
+    --input-border-color: #636363;
+    --input-focus-border-color: #ff9f1a;
+    --input-placeholder-color: #cccccc;
+    --error-color: #ff0000;
+    --success-color: #00ff00;
+    --transition-duration: 0.3s;
+}
+
+body {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.6)), url(images/bg4.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+/* ################ utility css################ */
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 10px 20px;
+
+}
+.cta-btn{
+    background-color: #ea1538;
+    color: var(--font-color);
+    font-weight: bold;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: 0.4s;
+}
+.title{
+    font-size: 30px;
+    font-weight: 700;
+    color: #fff;
+}
+/* ################################ header section ############# */
+.nav-container{
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    width: 100%;
+    transition: 0.6s;
+}
+.nav-container ul li{
+    position: relative;
+    margin: 0 15px;
+    font-weight: 700;
+}
+.nav-container .social-icons a{
+    column-gap: 20px;
+
+}
+
+.logo {
+    position: relative;
+    font-size: 40px;
+    cursor: pointer;
+    color: var(--font-color);
+    font-weight: 600;
+}
+.logo span{
+    color: #F00D55;
+    font-weight: 900;
+}
+
+.nav-container ul{
+    position: relative;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    column-gap: 20px;
+}
+.nav-container ul a{
+    color: var(--font-color);
+    text-decoration: none;
+    font-size: 15px;
+    transition: color 0.3s ease;
+    font-family: "Josefin Sans", serif;
+    text-transform: uppercase;
+
+}
+.nav-container ul a:hover{
+    color: #F00D55;
+}
+.social-icons a {
+    position: relative;
+    display: inline-block;
+    margin-right: 10px;
+    font-size: 30px;
+    color: var(--font-color);
+    transition: color 0.3s ease;
+    font-family: "Josefin Sans", serif;
+    text-decoration: none;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.2);
+    padding: 5px;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    color: #fff;
+    box-shadow: 0 2px 4px rgba(150, 17, 17, 0.2);
+    transition: color 0.3s ease;
+}
+
+
+/* ################################ main section ################################# */
+
+.about-container{
+    display: flex;
+    padding: 15px;
+    margin-top: 50px;
+}
+
+.about-container img{
+    width: 400px;
+    height: auto;
+    border-radius: 50px;
+}
+.about-container p{
+    margin-left: 0px;
+    font-size: 20px;
+    color: var(--font-color);
+    font-family: "Josefin Sans", serif;
+    text-align: justify;
+    line-height: 1.6;
+    max-width: 700px;
+    margin-top: 20px;
+}
+.about-container h1{
+    font-size: 30px;
+    color: var(--font-color);
+    font-family: "Josefin Sans", serif;
+    margin-bottom: 20px;
+    font-weight: 900;
+}
+.about-container h1 span{
+    color: #F00D55;
+    font-weight: 900;
+}
+.about-content a{
+    text-decoration: none;   
+}
+.about-content a:hover{
+    background-color: #99425d;
+    /* transition: color 0.3s ease; */
+    font-weight:bolder;
+}
+
+.about-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; 
+    gap: 20px;
+}
+.main-content p{
+    font-size: 20px;
+    color: var(--input-focus-border-color);
+    text-align: center;
+    line-height: 1.8;
+    max-width: 600px;
+
+}
+.main-content h1{
+    font-size: 35px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-weight: bolder;
+}
+.about-container .about-content{
+    margin-left: 150px;
+}
+/* ########## My bio section ################################# */
+
+.aboutme-container {
+    display: grid;
+    grid-template-columns: 60% 40%;
+    margin-top: 50px;
+    gap: 20px;
+}
+
+.aboutme-container .aboutme-image img{ 
+    display: block;
+    width: 560px;
+    height: 642px;
+    border-radius: 50px;
+}
+.aboutme-content p{
+    margin: 0px opx;
+    font-size: 20px;
+    color: rgb(214, 206, 206);
+    line-height: 1.6; 
+    max-width: 600px;
+} 
+.title span{
+    color: #F00D55;
+    font-weight: 900;
+}
+.wrapper{
+    margin-top: 10px;
+    position: relative;
+    width: 100%;
+    background-color: #747171;
+    box-shadow: 10px 10px 10px -1px rgba(10, 99, 169, 0.16),
+    -10px -10px 10px -1px rgba(104, 103, 103, 0.7);
+    border-radius: 10px;
+    padding: 40px 30px;
+    color: #262626;
+}
+.aboutme-container .aboutme-content h3{
+    font-size: 30px;
+    font-weight: 900;
+    color: white;
+}
+.skills-wrapper{
+    padding: 0 10px;
+}
+.skills-wrapper .bar{
+    margin: 10px 0;
+}
+.skills-wrapper .bar .skills span{
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: white;
+}
+.skills-wrapper .bar .progress-bar{
+    width: 100%;
+    height: 13px;
+    background-color: var(--inputbg-color);
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+
+}
+.skills-wrapper .bar .progress-bar span{
+    position: absolute;
+    height: 100%;
+    border-radius: 10px;
+    background-color: #f5004e;
+    transform: scale(0);
+    transform-origin: left;
+    animation: bar-animation 3s forwards;
+}
+@keyframes bar-animation {
+    0%{
+        transform: scale(0);
+    }
+    100%{
+        transform: scale(1);
+    }    
+}
+.skills-wrapper .bar .progress-bar span.html{
+    width: 90%;
+}
+
+
+
+
+
