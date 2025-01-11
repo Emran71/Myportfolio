@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
-    <link rel="icon" href="images/relIcon.png" type="image/icon">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <title>Md. Emran Khan| Home</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <!-- header section start -->
     <section id="header">
         <div class="nav-container container">
             <div class="logo">
@@ -31,9 +31,12 @@
                 <a href="https://github.com/Emran71" target="_blank"><i class="fa-brands fa-github"></i></a>
                 <a href="https://www.linkedin.com/in/ekhan4475/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
     
+            </div>
         </div>
-    </div>
+    </section>
+    <!-- header section end -->
 
+   <!-- About section start -->
     <section id="about">
         <div class="about-container container">
             <div class="about-image">
@@ -49,21 +52,24 @@
                     <a href="#" class="cta-btn">Learn More</a>
                 </div>
             </div>
-        </div>
-           
+        </div>       
     </section>
-   
-    <section id="aboutme">
-        <div class="aboutme-container container">
-            <div class="aboutme-content">
-                <h1 class="title"> <span>My </span>Bio </h1>
-                <br>
+
+  <!-- about section end   -->
+
+    <!-- my bio section start -->
+    <section id="mybio">
+        <h1 class="title"><span>My </span>Bio </h1>
+        <div class="mybio-container container">
+            <div class="mybio-content">
                 <p class="dsce"> Web Application Developer, Software Tester &
                     Tech Enthusiast. Recently I have completed internship
                     as a Functional Tester at a1qa. I have one year of experience on Web Application Development
                     and Software Quality assurance. I am eager to thrive in a competitive atmosphere
                     that values responsibility and encourages striving for excellence.
                 </p>
+                <br>
+                <!-- parcentage chart start -->
                 <div class="wrapper">
                     <div class="skills-wrapper">
                         <div class="bar">
@@ -125,54 +131,87 @@
                     </div>
                 </div>                
             </div>
+            <!-- parcentage chart end -->
 
-            <div class="aboutme-image">
+            <div class="mybio-image">
                 <img src="images/profile-photo.png" alt="AboutMe">
             </div>
         </div>
     </section>
+    <!-- about section end -->
 
-    <section id="service">
-        <div class="service-container container">
-            <div class="service-content">
-                <h1 class="title"> <span>My </span>Services </h1>
-                <br>
-                <div class="service-wrapper">
-                    <div class="service-box">
-                        <div class="service-icon">
-                            <i class="fas fa-code"></i>
+     <!-- my portfolio start -->
+    <section id="portfolio">
+        <h1 class="title"> <span>My </span>Portfolio </h1>
+        <div class="portfolio-container container">
+            <div class="portfolio-content">
+                <div class="portfolio-wrapper">
+                    <div class="portfolio-box">
+                        <div class="portfolio-image">
+                            <img src="images/portfolio1.jpg" alt="Portfolio1">
                         </div>
-                        <div class="service-title">
-                            <h2>Web Development</h2>
+                        <div class="portfolio-title">
+                            <h2>Project One</h2>
                         </div>
-                        <div class="service-dsce">
-                            <p>Web Development is the work involved in developing a Web site for the Internet or an intranet. Web development can range from developing a simple single static page of plain text to complex Web-based Internet applications, electronic businesses, and social network services.</p>
-                        </div>
-                    </div>
-                    <div class="service-box">
-                        <div class="service-icon">
-                            <i class="fas fa-bug"></i>
-                        </div>
-                        <div class="service-title">
-                            <h2>Software Testing</h2>
-                        </div>
-                        <div class="service-dsce">
-                            <p>Software testing is an investigation conducted to provide stakeholders with information about the quality of the software product or service under test. Software testing can also provide an objective, independent view of the software to allow the business to appreciate and understand the risks of software implementation.</p>
+                        <div class="portfolio-dsce">
+                            <p>Project One is a web application project. It is a simple project. It is a web application project. It is a simple project.</p>
                         </div>
                     </div>
-                    <div class="service-box">
-                        <div class="service-icon">
-                            <i class="fas fa-mobile-alt"></i>
+                    <div class="portfolio-box">
+                        <div class="portfolio-image">
+                            <img src="images/portfolio2.jpg" alt="Portfolio2">
                         </div>
-                        <div class="service-title">
-                            <h2>Responsive Design</h2>
+                        <div class="portfolio-title">
+                            <h2>Project Two</h2>
                         </div>
-                        <div class="service-dsce">
-                            <p>Responsive web design is an approach to web design that makes web pages render well on a variety of devices and window or screen sizes. Recent work also considers the viewer proximity as part of the viewing context as an extension for RWD.</p>
+                        <div class="portfolio-dsce">
+                            <p>Project Two is a web application project. It is a simple project. It is a web application project. It is a simple project.</p>
+                        </div>
+                    </div>
+                    <div class="portfolio-box">
+                        <div class="portfolio-image">
+                            <img src="images/portfolio3.jpg" alt="Portfolio3">
+                        </div>
+                        <div class="portfolio-title">
+                            <h2>Project Three</h2>
+                        </div>
+                        <div class="portfolio-dsce">
+                            <p>Project Three is a web application project. It is a simple project. It is a web application project. It is a simple project.</p>
                         </div>
                     </div>
                 </div>
             </div>
+        </div>
+
+    <!-- service section start -->
+    <section id="services">
+        <h1 class="title"> <span>My </span>Services </h1>
+        <div class="service-container container">
+            <div class="service-list">
+                <div>
+                    <i class='bx bx-code-alt'></i>
+                    <h2>Web Development</h2>
+                    <p>Web Development is the work involved in developing a Web site for the Internet or an intranet.</p>
+                    <a href="">Learn More</a>
+                </div>
+
+                <div>
+                    <i class='bx bx-test-tube'></i>
+                    <h2>Software Testing</h2>
+                    <p>Web Development is the work involved in developing a Web site for the Internet or an intranet.</p>
+                    <a href="">Learn More</a>
+                </div>
+
+                <div>
+                    <i class='bx bxl-redux'></i>
+                    <h2>UX/UI Design</h2>
+                    <p>
+                        Web Development is the work involved in developing a Web site for the Internet or an intranet.
+                    </p>
+                    <a href="">Learn More</a>
+                </div>
+            </div>
+        </div>
         </div>
     </section>
 </body>

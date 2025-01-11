@@ -29,6 +29,7 @@ body {
 
 /* ################ utility css################ */
 .container{
+    width: 1200px;
     max-width: 1200px;
     margin: 0 auto;
     padding: 10px 20px;
@@ -113,8 +114,7 @@ body {
   
 }
 
-
-/* ################################ main section ################################# */
+/* ################################ about section ################################# */
 
 .about-container{
     display: flex;
@@ -181,22 +181,22 @@ body {
 .about-container .about-content{
     margin-left: 150px;
 }
-/* ########## My bio section ################################# */
+/* ########## My Bio section ################################# */
 
-.aboutme-container {
+.mybio-container {
     display: grid;
     grid-template-columns: 60% 40%;
     margin-top: 50px;
     gap: 20px;
 }
 
-.aboutme-container .aboutme-image img{ 
+.mybio-container .mybio-image img{ 
     display: block;
-    width: 560px;
+    width: 600px;
     height: 650px;
     border-radius: 40%;
 }
-.aboutme-content p{
+.mybio-content p{
     margin: 0px opx;
     font-size: 20px;
     color: rgb(214, 206, 206);
@@ -211,17 +211,18 @@ body {
     margin-top: 10px;
     position: relative;
     width: 100%;
-    background-color: #747171;
+    background-color: var(--inputbg-color);
+    padding: 40px;
+    border-radius: 10px;
     box-shadow: 10px 10px 10px -1px rgba(10, 99, 169, 0.16),
     -10px -10px 10px -1px rgba(104, 103, 103, 0.7);
-    border-radius: 10px;
-    padding: 40px 30px;
-    color: #262626;
 }
-.aboutme-container .aboutme-content h3{
-    font-size: 30px;
+#mybio h1{
+    margin-top: 20px;
+    font-size: 50px;
     font-weight: 900;
     color: white;
+    text-align: center;
 }
 .skills-wrapper{
     padding: 0 10px;
@@ -237,7 +238,7 @@ body {
 .skills-wrapper .bar .progress-bar{
     width: 100%;
     height: 13px;
-    background-color: var(--inputbg-color);
+    background-color: black;
     border-radius: 10px;
     position: relative;
     overflow: hidden;
@@ -247,7 +248,7 @@ body {
     position: absolute;
     height: 100%;
     border-radius: 10px;
-    background-color: #f5004e;
+    background-color: var(--input-placeholder-color);
     transform: scale(0);
     transform-origin: left;
     animation: bar-animation 3s forwards;
@@ -260,11 +261,78 @@ body {
         transform: scale(1);
     }    
 }
-.skills-wrapper .bar .progress-bar span.html{
-    width: 90%;
+
+/* ########## My Portfolio section ############################# */
+#portfolio h1{
+    margin-top: 20px;
+    font-size: 50px;
+    font-weight: 900;
+    color: white;
+    text-align: center;
 }
 
-/* ########## services section ############################# */
+/* ########### My services section ############################# */
+
+#services h1{
+    margin-top: 20px;
+    font-size: 50px;
+    font-weight: 900;
+    color: white;
+    text-align: center;
+}
+.service-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 40px;
+    margin-top: 50px;
+    color: white;
+    div{
+        background-color: var(--inputbg-color);
+        padding: 40px;
+        font-size: 13px;
+        p{
+            font-weight: 500;
+            line-height: 22px;
+        }
+        i{
+            font-size: 50px;
+            color: var(--primary-color);
+        }
+        h2{
+            font-size: 30px;
+            font-weight: 600;
+            margin-top: 20px 0px;
+        }
+        border-radius: 10px;
+        box-shadow: 10px 10px 10px -1px rgba(10, 99, 169, 0.16),
+        -10px -10px 10px -1px rgba(104, 103, 103, 0.7);
+        a{
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: var(--primary-color);
+            color: white;
+            font-weight: 600;
+            text-decoration: none;
+            border-radius: 30px;
+
+        }
+        transition: background 0.4s, transform 0.4s;
+    }
+    div:hover{
+        background: var(--primary-color);
+        i{
+            color: var(--inputbg-color);
+        }
+        a{
+            background: var(--inputbg-color);
+            color: var(--primary-color);
+        }
+        transform: translateY(-10px);
+    }
+}
+
+
 
 
 
