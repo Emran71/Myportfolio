@@ -59,15 +59,13 @@ body {
     padding: 10px;
     width: 100%;
     transition: 0.6s;
+    z-index: 1000;
+    background: linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.6));
 }
 .nav-container ul li{
     position: relative;
     margin: 0 15px;
     font-weight: 700;
-}
-.nav-container .social-icons a{
-    column-gap: 20px;
-
 }
 
 .logo {
@@ -76,10 +74,16 @@ body {
     cursor: pointer;
     color: var(--font-color);
     font-weight: 600;
+    /* display: flex; */
 }
+/* .logo img{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+} */
 .logo span{
     color: #F00D55;
-    font-weight: 900;
+    font-weight: 500;
 }
 
 .nav-container ul{
@@ -89,28 +93,74 @@ body {
     align-items: center;
     column-gap: 20px;
 }
-.nav-container ul a{
+.nav-container nav ul a{
+    position: relative;
     color: var(--font-color);
     text-decoration: none;
-    font-size: 15px;
+    font-size: 18px;
     text-transform: uppercase;
+    letter-spacing: 0.5px;
+    padding: 0 10px;
 
 }
-.nav-container ul a:hover{
-    color: #F00D55;
+.nav-container nav ul a::after{
+    content: '';
+    position: absolute;
+    bottom: -10;
+    left: 0;
+    top: 17px;
+    width: 0%;
+    height: 3px;
+    background-color: #e23f73;
+    transition: all 0.3s;
+
 }
-.social-icons a {
-    position: relative;
-    display: inline-block;
-    margin-right: 10px;
-    font-size: 30px;
-    color: var(--font-color);
+.nav-container ul a:hover::after{
+    width: 100%;
+}
+.hireme-button{
+    border-radius: 10px;
+    background-color: var(--header-color);
+    border: none;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 900;
     padding: 5px;
+    width: 200px;
+    height: 40px;
+    transition: all 0.5s;
     cursor: pointer;
-    color: #fff;
-
-  
 }
+.hireme-button a{
+    text-decoration: none;
+    text-align: center;
+    color: var(--font-color);
+}
+.hireme-button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  .hireme-button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: 20px;
+    transition: 0.5s;
+  }
+  
+  .hireme-button:hover span {
+    padding-right: 25px;
+  }
+  
+  .hireme-button:hover span:after {
+    opacity: 1;
+    right: -7px;
+    top: -13px;
+  }
 
 /* ################################ about section ################################# */
 
@@ -124,6 +174,14 @@ body {
     width: 400px;
     height: auto;
     border-radius: 50px;
+    transform: translateX(-150%);
+    animation: hero-text-animation 1s ease-in-out forwards;
+}
+@keyframes hero-text-animation {
+    100%{
+        transform: translateX(0%);
+    }
+    
 }
 .hero-container p{
     margin-left: 0px;
@@ -160,6 +218,13 @@ body {
     align-items: center;
     justify-content: center; 
     gap: 20px;
+    transform: translateX(150%);
+    animation: hero-text-animation 1s ease-in-out forwards;
+}
+@keyframes hero-text-animation {
+    100%{
+        transform: translateX(0%);
+    }   
 }
 .main-content p{
     font-size: 30px;
@@ -192,14 +257,32 @@ body {
     width: 600px;
     height: 650px;
     border-radius: 40%;
+    transform: translateX(150%);
+    animation: mybio-image-animation 1s ease-in-out forwards;
+}
+@keyframes mybio-image-animation {
+    100%{
+        transform: translateY(0%);
+    }
+    
 }
 .mybio-content p{
     margin: 0px opx;
     font-size: 20px;
-    color: rgb(214, 206, 206);
+    color: rgb(250, 248, 248);
+    text-align: justify;
     line-height: 1.6; 
     max-width: 600px;
+    transform: translateY(150%);
+    animation: mybio-content-animation 1s ease-in-out forwards;
+
 } 
+@keyframes mybio-content-animation {
+    100%{
+        transform: translateY(0%);
+    }
+    
+}
 .title span{
     color: #F00D55;
     font-weight: 900;
@@ -213,6 +296,14 @@ body {
     border-radius: 10px;
     box-shadow: 10px 10px 10px -1px rgba(10, 99, 169, 0.16),
     -10px -10px 10px -1px rgba(104, 103, 103, 0.7);
+    transform: translateX(-150%);
+    animation: mybio-text-animation ease-in-out forwards;
+}
+@keyframes mybio-text-animation {
+    100%{
+        transform: translateY(0%);
+    }
+    
 }
 #mybio h1{
     margin-top: 20px;
@@ -483,6 +574,17 @@ body {
         .btn:hover{
             background-color: var(--inputbg-color);
         }
+}
+/* ########### Footer section ############################# */
+#footer{
+    padding: 10px 0;
+    color: white;
+    text-align: center;
+    height: 60px;
+    background-color: var(--inputbg-color);
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px -1px rgba(10, 99, 169, 0.16),
+    -10px -10px 10px -1px rgba(104, 103, 103, 0.7);
 }
 
 
