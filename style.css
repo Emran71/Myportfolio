@@ -92,6 +92,7 @@ body {
     display: flex;
     align-items: center;
     column-gap: 20px;
+    transition: 0.5s ease;
 }
 .nav-container nav ul a{
     position: relative;
