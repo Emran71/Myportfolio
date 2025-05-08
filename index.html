@@ -5,18 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <title>Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <title>My Portfolio</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <!-- header section start -->
     <section id="header">
         <div class="nav-container">
-            <div class="logo">
+            <div class="logo" data-aos="fade-right">
                 <!-- <img src="images/logo1.png" alt=""> -->
                 <h3><span>P</span>ortfolio</h3>
             </div>
-            <div class="nav-item">
+            <div class="nav-item" data-aos="fade-left">
                 <nav>
                     <ul>
                         <li><a href="#hero">Home</a></li>
@@ -29,7 +30,7 @@
                 </nav>
             </div>
             
-            <button class="hireme-button"><a href="#contact">Hire Me</a> <span></span></button>
+            <button class="hireme-button" data-aos="fade-left"><a href="https://wa.me/qr/IC5BRPZNFCT7E1" target="_blank">Contact Me!</a> <span></span></button>
         </div>
     </section>
     <!-- header section end -->
@@ -37,17 +38,17 @@
    <!-- About section start -->
     <section id="hero">
         <div class="hero-container container">
-            <div class="hero-image">
+            <div class="hero-image" data-aos="fade-right">
                 <img src="images/image2.png" alt="About Me">
             </div>
-            <div class="hero-content">
+            <div class="hero-content" data-aos="fade-left">
                 <div class="main-content">
                     <p>Web Developer & Tester</p>
                     <h1><span>Hello</span>, I'm Md. Emran Khan from <br> Bangladesh</h1>
                 </div>
 
                 <div class="button">
-                    <a href="https://github.com/Emran71?tab=repositories" class="cta-btn" target="_blank">Learn More</a>
+                    <a href="https://github.com/Emran71" class="cta-btn" target="_blank">Learn More</a>
                 </div>
             </div>
         </div>       
@@ -57,9 +58,9 @@
 
     <!-- my bio section start -->
     <section id="mybio">
-        <h1 class="title"><span>My </span>Bio </h1>
+        <h1 class="title" data-aos="fade-up"><span>My </span>Bio </h1>
         <div class="mybio-container container">
-            <div class="mybio-content">
+            <div class="mybio-content" data-aos="fade-right">
                 <p class="dsce"> Web Application Developer, Software Tester &
                     Tech Enthusiast. Recently I have completed internship
                     as a Functional Tester at a1qa. I have one year of experience on Web Application Development
@@ -131,7 +132,7 @@
             </div>
             <!-- parcentage chart end -->
 
-            <div class="mybio-image">
+            <div class="mybio-image" data-aos="fade-left">
                 <img src="images/profile-photo.png" alt="AboutMe">
             </div>
         </div>
@@ -140,10 +141,10 @@
 
      <!-- my portfolio start -->
     <section id="portfolio">
-        <h1 class="title"> <span>My </span>Portfolio </h1>
+        <h1 class="title" data-aos="fade-up"> <span>My </span>Portfolio </h1>
         <div class="portfolio-container container">
             <div class="work-list">
-                <div class="work">
+                <div class="work" data-aos="fade-right">
                     <img src="images/work1.png" alt="work1">
                     <div class="layer">
                         <h3>My-bazerbd.com</h3>
@@ -151,7 +152,7 @@
                         <a href="https://emran71.github.io/ecommarce-project/" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                     </div>
                 </div>
-                <div class="work">
+                <div class="work" data-aos="fade-up">
                     <img src="images/work2.png" alt="work2">
                     <div class="layer">
                         <h3>Newspaper Website</h3>
@@ -159,12 +160,36 @@
                         <a href="https://emran71.github.io/Newspaper_html/" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                     </div>
                 </div>
-                <div class="work">
+                <div class="work" data-aos="fade-left">
                     <img src="images/work3.png" alt="work3">
                     <div class="layer">
                         <h3>Resume Builder</h3>
                         <p>Developed a responsive e-resume website with a professional design showcasing personal skills, experience, and projects. Integrated backend functionality for dynamic content updates and user interaction</p>
                         <a href="https://emran71.github.io/Resume_assignment/" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work" data-aos="fade-right">
+                    <img src="images/work4.png" alt="work4">
+                    <div class="layer">
+                        <h3>Task Management App</h3>
+                        <p>A full-stack task management application built with React and Node.js, featuring real-time updates and user authentication.</p>
+                        <a href="#" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work" data-aos="fade-up">
+                    <img src="images/work5.png" alt="work5">
+                    <div class="layer">
+                        <h3>Weather Dashboard</h3>
+                        <p>Interactive weather dashboard using OpenWeather API, featuring real-time weather updates and 5-day forecasts.</p>
+                        <a href="#" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work" data-aos="fade-left">
+                    <img src="images/work6.png" alt="work6">
+                    <div class="layer">
+                        <h3>Portfolio Website</h3>
+                        <p>A modern, responsive portfolio website showcasing professional work and skills with smooth animations.</p>
+                        <a href="#" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                     </div>
                 </div>
             </div>
@@ -174,24 +199,24 @@
 
     <!-- service section start -->
     <section id="services">
-        <h1 class="title"> <span>My </span>Services </h1>
+        <h1 class="title" data-aos="fade-up"> <span>My </span>Services </h1>
         <div class="service-container container">
             <div class="service-list">
-                <div>
+                <div data-aos="fade-right">
                     <i class='bx bx-code-alt'></i>
                     <h2>Web Development</h2>
                     <p> Frontend uses HTML, CSS, and JavaScript, while backend relies on languages like PHP, Python, or Node.js.Then mange the backend through backend process. This process mostly follow agile methodology</p>
                     <a href="">Learn More</a>
                 </div>
 
-                <div>
+                <div data-aos="fade-up">
                     <i class='bx bx-test-tube'></i>
                     <h2>Software Testing</h2>
                     <p>Software testing involves evaluating applications to ensure they meet requirements and function as expected. It includes various testing types like functional, performance, and security testing to identify and fix defects.</p>
                     <a href="">Learn More</a>
                 </div>
 
-                <div>
+                <div data-aos="fade-left">
                     <i class='bx bxl-redux'></i>
                     <h2>UX/UI Design</h2>
                     <p>
@@ -207,10 +232,10 @@
 
     <!-- --contact section start  -->
     <section id="contact">
-        <h1 class="title"> <span>Contact </span>Me </h1>
+        <h1 class="title" data-aos="fade-up"> <span>Contact </span>Me </h1>
         <div class="contact-container container">
             <div class="contact-content">
-                <div class="contact-info">
+                <div class="contact-info" data-aos="fade-right">
                         <h3>Contact Info</h3>
                         <div class="info"> 
                             <p><i class='bx bx-map'></i> 995, Shawrapara, Kafrul, Bangladesh</p>    
@@ -228,7 +253,7 @@
                             <a href="" target="_blank"><i class="fa-brands fa-twitter"></i></a>
                         </div>
                 </div>
-                <div class="contact-form">
+                <div class="contact-form" data-aos="fade-left">
                     <h3>Contact Form</h3>
                     <form>
                         <div class="input-box">
@@ -251,10 +276,20 @@
      <!-- footer section start -->
     <footer id="footer">
         <div class="footer-container container">
-            <div class="footer-content">
+            <div class="footer-content" data-aos="fade-up">
                 <p>&copy; 2025 Md. Emran Khan. All Rights Reserved.</p>
             </div>
         </div>
     </footer>
+
+    <!-- AOS Animation Script -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000,
+            once: true,
+            offset: 100
+        });
+    </script>
 </body>
 </html>
